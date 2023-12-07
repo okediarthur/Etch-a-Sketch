@@ -1,0 +1,11 @@
+.grid-row{
+    display: flex;
+}
+
+.grid-item{
+    width: 30px;
+    height: 30px;
+    background-color: aquamarine;
+    border: 1px solid #ccc;
+    margin: 2px;
+}
