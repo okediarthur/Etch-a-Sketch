@@ -16,3 +16,10 @@
     background-color:#000;
 }
 
+#resetButton {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 20em;
+}
+

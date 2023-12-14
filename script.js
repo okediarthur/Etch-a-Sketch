@@ -1,10 +1,20 @@
 console.log("Script is running!");
 document.addEventListener("DOMContentLoaded", function() {
     var container = document.getElementById("container");
+    var resetButton = document.getElementById("resetButton");
 
     //Function to handle mouseover event
     function handleMouseOver(event){
         event.target.classList.add("hovered");
+    }
+
+    //Function to handle reset button click
+    function handleResetButtonClick() {
+        //Remove the 'hovered' class from all grid items
+        var gridItems = document.querySelectorAll('.grid-item');
+        gridItems.forEach(function(item){
+            item.classList.remove('hovered');
+        });
     }
     
     // Looping to create rows
@@ -28,4 +38,5 @@ document.addEventListener("DOMContentLoaded", function() {
         //append row div to container div
         container.appendChild(row);
     }
+    resetButton.addEventListener("click", handleResetButtonClick);
 });
