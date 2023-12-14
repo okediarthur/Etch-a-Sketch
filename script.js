@@ -2,25 +2,23 @@ console.log("Script is running!");
 document.addEventListener("DOMContentLoaded", function() {
     var container = document.getElementById("container");
 
-    //Looping to create rows
+    //looping to create rows
     for(var i = 0; i < 16; i++){
         //create a new row div
         var row = document.createElement("div");
         row.className = "grid-row";
 
-        //loop to create columns
+        //looping to create columns
         for(var j = 0; j < 16; j++){
-            //create a new div for each column
+            //create a new column
             var cell = document.createElement("div");
             cell.className = "grid-item";
-
-            //appending the column div to the row div
+            //append column div to row div
             row.appendChild(cell);
-            // console.log(row);
         }
-        //Append the row div to the container div
+        //append the row div to the coontainer div
         container.appendChild(row);
-        // console.log(container);
+        console.log(container)
     }
 
 });

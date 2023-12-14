@@ -1,5 +1,6 @@
 .grid-row{
     display: flex;
+    /* background-color: blue; */
 }
 
 .grid-item{
@@ -9,3 +10,4 @@
     border: 1px solid #ccc;
     margin: 2px;
 }
+
