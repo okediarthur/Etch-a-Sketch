@@ -1,6 +1,6 @@
 .grid-row{
     display: flex;
-    /* background-color: blue; */
+    
 }
 
 .grid-item{
@@ -9,5 +9,10 @@
     background-color: aquamarine;
     border: 1px solid #ccc;
     margin: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.grid-item.hovered {
+    background-color:#000;
 }
 
